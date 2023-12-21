@@ -66,3 +66,323 @@ a {
   margin-inline: 2.4rem;
 }
 
+/* our changes start */
+.hero-section-home {
+  background: url("/images/Home\ page.jpg") bottom center/cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-section-partnership-model {
+  background: url("/images/Partnership\ model.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-section-property-model {
+  background: url("/images/Home\ Loan.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-section-msme-model {
+  background: url("/images/Micro\ Enterprise.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-section-business-loan {
+  background: url("/images/Business\ loan.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-section-vehicle {
+  background: url("/images/Car\ Loan.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.color-black {
+  color: #000 !important;
+}
+
+.header-transparent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 10000;
+  border: none !important;
+  transition: all 0.2s ease-in-out;
+  height: auto;
+  background-color: transparent;
+}
+
+.active-header {
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.active-header a {
+  color: #000 !important;
+}
+
+.hero-section-image {
+  background-image: linear-gradient(45deg, #3687c589, rgba(32, 32, 32, 0.196)),
+    url("/images/hero-image.jpg");
+  background-position: top;
+  height: 100vh;
+  background-size: cover;
+}
+
+.trust-num {
+  color: #3686c5;
+  font-weight: 500;
+  margin-top: 0.4rem;
+  line-height: 3.2rem;
+  font-size: 4rem;
+}
+
+.trust-business {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-top: 0.4rem;
+}
+
+/* .icon-box-container{
+  display: grid;
+  grid-template-columns:3 ;
+  border: 1px solid red;
+} */
+.hero-wrapper {
+  background-color: #3683c5;
+  width: 100%;
+  padding: 60px;
+  /* margin-top: 30px; */
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-box p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 3.2rem;
+}
+
+.icon-box img {
+  background-color: white;
+  padding: 15px;
+  border-radius: 0.8rem;
+}
+
+.col-grid {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.col-grid h2 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.eligibility-img {
+  background: url("/images/man.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.eligibility-img-cont {
+  gap: 20px;
+  flex-wrap: nowrap !important;
+}
+
+/* Loan calculator css start */
+.loan-calculator {
+  margin: 24px auto;
+  background: #fff;
+  box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #14213d;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.loan-calculator,
+.loan-calculator * {
+  box-sizing: border-box;
+}
+
+.loan-calculator .top {
+  background: #3685c5;
+  color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loan-calculator .top h2 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 900;
+}
+
+.loan-calculator form {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.loan-calculator .title {
+  margin-bottom: 16px;
+}
+
+.loan-calculator form input {
+  font-size: 20px;
+  padding: 8px 24px;
+  width: 100%;
+}
+
+.loan-calculator .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.loan-calculator .result .left {
+  width: 100%;
+  padding: 8px 32px;
+}
+
+.loan-calculator .left h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.loan-calculator .result .value {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.loan-calculator .result .value::before {
+  content: "₹";
+  font-size: 24px;
+  font-weight: 400;
+  margin-right: 6px;
+  opacity: 0.4;
+}
+
+.loan-calculator .calculate-btn {
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin: 24px 0;
+}
+
+.hero-trust-p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.loan-calculator .right {
+  width: 40%;
+}
+
+.hero-section-heading {
+  line-height: 6.4rem;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.eligibility-div1 {
+  gap: 20px !important;
+}
+
+.eligibility-div2 {
+  border: 1px solid #b8b1b1;
+  border-radius: 20px;
+}
+
+.eligibility-para {
+  color: #3686c5;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+
+.eligibility-heading {
+  font-size: 5.2rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+}
+
+.testimonails-section {
+  background-color: white !important;
+}
+
+.hero-wrapper-heading {
+  color: white;
+  line-height: 5.44rem;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.quick-link {
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  .loan-calculator {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .loan-calculator form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .loan-calculator .result {
+    flex-direction: column;
+    text-align: center;
+  }
+}
