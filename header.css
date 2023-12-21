@@ -48,6 +48,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
   /* Color highlighting when pressed on mobile devices */
   /*-webkit-tap-highlight-color: transparent;*/
 }
@@ -274,7 +275,7 @@ a {
   .nav__list {
     height: 100%;
     display: flex;
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
   .nav__link {
     height: 100%;
@@ -301,7 +302,7 @@ a {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s, top 0.3s;
-    box-shadow: 0 1px 15px hsla(0, 0%, 78%, 0.3);
+    box-shadow: 0 5px 15px hsla(0, 0%, 57%, 0.3);
   }
 
   .dropdown__link,

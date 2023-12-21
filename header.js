@@ -1,14 +1,14 @@
 /*=============== SHOW MENU ===============*/
 const showMenu = (toggleId, navId) =>{
-   const toggle = document.getElementById(toggleId),
+   const toggle_Id = document.getElementById(toggleId),
          nav = document.getElementById(navId)
 
-   toggle.addEventListener('click', () =>{
+   toggle_Id.addEventListener('click', () =>{
        // Add show-menu class to nav menu
        nav.classList.toggle('show-menu')
 
        // Add show-icon to show and hide the menu icon
-       toggle.classList.toggle('show-icon')
+       toggle_Id.classList.toggle('show-icon')
    })
 }
 
