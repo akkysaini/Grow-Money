@@ -15,7 +15,7 @@ html {
   --black-color-light: hsl(220, 24%, 15%);
   --gray-color-lighten: hsl(0, 0%, 94%);
   --white-color: #ffffff;
-  --blue-color: #2c88d1;
+  --blue-color: #3685c5;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -65,8 +65,132 @@ a {
   max-width: 1140px;
   margin-inline: 2.4rem;
 }
+a,
+.btn,
+button {
+  outline: none;
+  transition: all 300ms ease-in-out 0s;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
 
-/* our changes start */
+a:hover,
+a:focus .btn:hover,
+.btn:focus,
+button:hover,
+button:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 10px 35px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 0;
+}
+
+.btn-danger {
+  background-color: #9a0000;
+  border-color: #9a0000;
+}
+
+.btn-primary {
+  background-color: #2c88d1;
+  border-color: #2c88d1;
+}
+
+.btn span,
+.btn img,
+.btn i {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 250px solid rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 250px solid rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn:after {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.btn:hover:before,
+.btn-main:focus:before,
+.btn.active:before {
+  opacity: 1;
+  -webkit-transform: translate(-10px, -70px);
+  transform: translate(-10px, -70px);
+}
+
+.btn:hover:after,
+.btn-main:focus:after,
+.btn.active:after {
+  opacity: 1;
+  -webkit-transform: translate(-40px, -50px);
+  transform: translate(-40px, -50px);
+}
+
+.btn-default {
+  background-color: #363435;
+  color: #ffffff;
+  border-color: #363435;
+}
+
+.btn-with-icon > img {
+  margin-right: 10px;
+}
+
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*=============== REUSABLE CSS CLASSES ENDS ===============*/
+
+/*=============== HERO SECTION CSS ===============*/
+
 .hero-section-home {
   background: url("/images/Home\ page.jpg") bottom center/cover;
   width: 100%;
@@ -163,13 +287,11 @@ a {
   margin-top: 0.4rem;
 }
 
-/* .icon-box-container{
-  display: grid;
-  grid-template-columns:3 ;
-  border: 1px solid red;
-} */
+/*=============== HERO SECTION ENDS ===============*/
+
 .hero-wrapper {
   background-color: #3683c5;
+  background-color: var(--blue-color);
   width: 100%;
   padding: 60px;
   /* margin-top: 30px; */
@@ -221,7 +343,14 @@ a {
   flex-wrap: nowrap !important;
 }
 
-/* Loan calculator css start */
+.hero-trust-p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+/*=============== LOAN CALCULATOR CSS START ===============*/
+
 .loan-calculator {
   margin: 24px auto;
   background: #fff;
@@ -243,6 +372,7 @@ a {
 
 .loan-calculator .top {
   background: #3685c5;
+  background: var(--blue-color);
   color: #fff;
   padding: 32px;
   border-radius: 8px;
@@ -315,12 +445,6 @@ a {
   margin: 24px 0;
 }
 
-.hero-trust-p {
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
-
 .loan-calculator .right {
   width: 40%;
 }
@@ -368,21 +492,4 @@ a {
 
 .quick-link {
   gap: 20px;
-}
-
-@media (max-width: 650px) {
-  .loan-calculator {
-    width: 90%;
-    max-width: 500px;
-  }
-
-  .loan-calculator form {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .loan-calculator .result {
-    flex-direction: column;
-    text-align: center;
-  }
 }
