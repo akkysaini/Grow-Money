@@ -7,29 +7,8 @@
   background-color: var(--white-color);
   box-shadow: 0 2px 16px hsla(0, 0%, 78%, 0.3);
   z-index: var(--z-fixed);
+  font-size: 1.5rem;
 }
-.transparent {
-  /* position: fixed; */
-  /* margin-bottom: -5.6rem; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10000;
-  border: none !important;
-  transition: all 0.2s ease-in-out;
-  background-color: transparent;
-  box-shadow: none;
-
-}
-
-.active-header {
-  background-color: var(--white-color) !important;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-}
-
 
 /*=============== NAV ===============*/
 .nav {
@@ -233,7 +212,7 @@
   .nav__list {
     height: 100%;
     display: flex;
-    column-gap: 3.2rem;
+    column-gap: 2rem;
   }
   .nav__link {
     height: 100%;

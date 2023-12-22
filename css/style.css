@@ -19,7 +19,7 @@ html {
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Mulish", sans-serif;
   /* --normal-font-size: 0.938rem; */
-  --normal-font-size: 1.5rem;
+  --normal-font-size: 1.6rem;
   /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
@@ -30,7 +30,7 @@ html {
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
-    --normal-font-size: 1.4rem;
+    --normal-font-size: 1.6rem;
   }
 }
 
