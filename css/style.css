@@ -8,7 +8,6 @@ html {
 :root {
   --header-height: 3.5rem;
   --header-height: 5.6rem;
-
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --black-color: hsl(0, 0%, 0%);
@@ -16,26 +15,22 @@ html {
   --gray-color-lighten: hsl(0, 0%, 94%);
   --white-color: #ffffff;
   --blue-color: #3685c5;
-
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Mulish", sans-serif;
   /* --normal-font-size: 0.938rem; */
-  --normal-font-size: 1.4rem;
-
+  --normal-font-size: 1.5rem;
   /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
-
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
-    --normal-font-size: 1.3rem;
+    --normal-font-size: 1.4rem;
   }
 }
 
@@ -61,10 +56,14 @@ a {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.border-red {
+  border: 1px solid red;
+}
 .boxed {
   max-width: 1140px;
   margin-inline: 2.4rem;
 }
+
 a,
 .btn,
 button {
@@ -97,6 +96,7 @@ button:focus {
   overflow: hidden;
   text-align: center;
   border: 0;
+  font-size: 1.4rem;
 }
 
 .btn-danger {
@@ -292,8 +292,8 @@ button:focus {
 .hero-wrapper {
   background-color: #3683c5;
   background-color: var(--blue-color);
-  width: 100%;
-  padding: 60px;
+  /* width: 100%; */
+  padding: 60px 0;
   /* margin-top: 30px; */
 }
 
@@ -340,7 +340,7 @@ button:focus {
 
 .eligibility-img-cont {
   gap: 20px;
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
 }
 
 .hero-trust-p {
@@ -449,14 +449,12 @@ button:focus {
   width: 40%;
 }
 
+/*=============== LOAN CALCULATOR CSS ENDS ===============*/
+
 .hero-section-heading {
   line-height: 6.4rem;
   font-weight: 700;
   font-size: 6rem;
-}
-
-.eligibility-div1 {
-  gap: 20px !important;
 }
 
 .eligibility-div2 {
