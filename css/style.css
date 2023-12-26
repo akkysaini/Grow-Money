@@ -272,19 +272,15 @@ button:focus {
   background-size: cover;
 }
 
-.trust-num {
-  color: #3686c5;
-  font-weight: 500;
-  margin-top: 0.4rem;
-  line-height: 3.2rem;
-  font-size: 4rem;
+.hero-text .sub-heading {
+  font-size: 3.2rem;
 }
 
-.trust-business {
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-  margin-top: 0.4rem;
+.trust-num {
+  color: #3686c5;
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 0.5rem 0;
 }
 
 /*=============== HERO SECTION ENDS ===============*/
@@ -313,7 +309,7 @@ button:focus {
 
 .icon-box img {
   background-color: white;
-  padding: 15px;
+  padding: 0.8rem;
   border-radius: 0.8rem;
 }
 
@@ -342,10 +338,13 @@ button:focus {
   gap: 20px;
   flex-wrap: nowrap;
 }
+.hero-trust {
+  margin-top: 2rem;
+}
 
 .hero-trust-p {
-  font-weight: 400;
-  font-size: 1.6rem;
+  font-weight: 600;
+  font-size: 2rem;
   line-height: 2rem;
 }
 
@@ -452,7 +451,6 @@ button:focus {
 /*=============== LOAN CALCULATOR CSS ENDS ===============*/
 
 .hero-section-heading {
-  line-height: 6.4rem;
   font-weight: 700;
   font-size: 6rem;
 }

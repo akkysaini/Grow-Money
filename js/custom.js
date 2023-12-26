@@ -242,6 +242,30 @@ function openTab(th) {
   window.open(th.name, "_blank");
 }
 
+// javascript added
+// ======================= COUNTER JAVASCRIPT START ======================
+const myNum = document.querySelectorAll(".count");
+let speed = 200;
+myNum.forEach((myCount) => {
+  let target_count = myCount.dataset.count;
+  let init_count = +myCount.innerText;
+  let new_increment_num = Math.floor(target_count / speed);
+
+  const updateNumber = () => {
+    init_count += new_increment_num;
+    myCount.innerText = init_count;
+
+    if (init_count < target_count) {
+      setTimeout(() => {
+        updateNumber();
+      }, 5);
+    }
+  };
+
+  updateNumber();
+});
+// ======================= COUNTER JAVASCRIPT END ======================
+
 // j-query added
 
 $(window).on("scroll", function () {
