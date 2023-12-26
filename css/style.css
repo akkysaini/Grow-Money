@@ -194,12 +194,12 @@ button:focus {
 /*=============== HERO SECTION CSS ===============*/
 
 .hero-section-home {
-  background: url("/images/Home\ page.jpg") bottom center/cover;
+  background: url("images/Home\ page.jpg") bottom center/cover;
   width: 100%;
   height: 100vh;
 }
 
-.hero-section-partnership-model {
+/* .hero-section-partnership-model {
   background: url("/images/Partnership\ model.jpg");
   background-size: cover;
   background-position: center;
@@ -236,7 +236,7 @@ button:focus {
   background-size: cover;
   background-position: bottom;
   height: 100vh;
-}
+} */
 
 .color-black {
   color: #000 !important;
@@ -757,7 +757,6 @@ ul.slick-dots li.slick-active button {
 p.lead {
   font-size: 15px;
 }
-
 
 /* ====================== Footer CSS ================================================= */
 
