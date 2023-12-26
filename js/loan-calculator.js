@@ -7,7 +7,7 @@ const totalAmountValue = document.querySelector(".total-amount .value");
 const calculateBtn = document.querySelector(".calculate-btn");
 const calculateForm = document.querySelector("#loanCalculator__form");
 
-localStorage.removeItem(calculateForm);
+localStorage.removeItem(calculateForm)
 
 let loanAmount = parseFloat(loanAmountInput.value);
 let interestRate = parseFloat(interestRateInput.value);
