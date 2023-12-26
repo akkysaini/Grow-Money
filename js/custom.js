@@ -10,17 +10,17 @@ $(document).ready(function () {
     autoplay: true,
     cssEase: "linear",
   });
-  $(".testimonial-slider").slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    pauseOnHover: false,
-  });
+  // $(".testimonial-slider").slick({
+  //   dots: true,
+  //   arrows: false,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   cssEase: "linear",
+  //   pauseOnHover: false,
+  // });
   $(".service-slider").slick({
     dots: true,
     arrows: false,
@@ -90,36 +90,37 @@ $(document).ready(function () {
       },
     ],
   });
-  $(".clients-slider").slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 4,
-    centerMode: true,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+
+  // $(".clients-slider").slick({
+  //   dots: false,
+  //   arrows: false,
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   centerMode: true,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 1000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1280,
+  //       settings: {
+  //         slidesToShow: 3,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 992,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // });
   // $('.timeline-slider').slick({
   //   dots: true,
   //   arrows: false,
@@ -268,6 +269,48 @@ myNum.forEach((myCount) => {
 
 // j-query added
 
+$(".clients-slider").slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 4,
+  centerMode: true,
+  slidesToScroll: 1,
+  autoplay: true,
+  pauseOnHover: false,
+  autoplaySpeed: 1000,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+$(".testimonial-slider").slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  cssEase: "linear",
+  pauseOnHover: false,
+});
 $(window).on("scroll", function () {
   if ($(window).scrollTop() > 100) {
     $(".header-transparent").addClass("active-header");

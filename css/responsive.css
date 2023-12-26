@@ -18,6 +18,19 @@
   .header-btn {
     margin: 2rem;
   }
+  .testimonial-slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .testimonial-slider p {
+    font-size: 15px;
+  }
+
+  .testimonial-slider .slide {
+    padding: 10px !important;
+    margin: 0;
+  }
 
   /* ============== Loan Calculator CSS ======================== */
 
