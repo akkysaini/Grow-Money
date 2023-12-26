@@ -152,18 +152,18 @@ $(document).ready(function () {
   //   ]
   // });
   /** header Fix **/
-  $(window).scroll(function () {
-    var topBar = $("header");
-    if ($(this).scrollTop() > 300) {
-      topBar.addClass("fixed");
-    } else {
-      topBar.removeClass("fixed");
-    }
-  });
-  $(".toggler").click(function () {
-    $(".header .nav").slideToggle();
-    $(this).toggleClass("is-active");
-  });
+  // $(window).scroll(function () {
+  //   var topBar = $("header");
+  //   if ($(this).scrollTop() > 300) {
+  //     topBar.addClass("fixed");
+  //   } else {
+  //     topBar.removeClass("fixed");
+  //   }
+  // });
+  // $(".toggler").click(function () {
+  //   $(".header .nav").slideToggle();
+  //   $(this).toggleClass("is-active");
+  // });
   /**** Scroll Top  ****/
   $(window).scroll(function () {
     /* Scroll Top */

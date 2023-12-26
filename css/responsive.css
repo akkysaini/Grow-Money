@@ -33,6 +33,12 @@
   /* ============== Loan Calculator CSS End ======================== */
 }
 @media screen and (max-width: 650px) {
+  .logos-list,
+  .single-logo .logo-img {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
   .loan-calculator {
     gap: 30px;
   }
