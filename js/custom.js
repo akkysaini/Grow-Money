@@ -258,7 +258,7 @@ myNum.forEach((myCount) => {
     if (init_count < target_count) {
       setTimeout(() => {
         updateNumber();
-      }, 5);
+      }, 7);
     }
   };
 

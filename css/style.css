@@ -97,6 +97,7 @@ button:focus {
   text-align: center;
   border: 0;
   font-size: 1.4rem;
+  border-radius: 30px;
 }
 
 .btn-danger {
@@ -394,7 +395,10 @@ button:focus {
 }
 
 .loan-calculator .title {
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
+}
+.loan-calculator h2 {
+  margin-bottom: 1.6rem;
 }
 
 .loan-calculator form input {
