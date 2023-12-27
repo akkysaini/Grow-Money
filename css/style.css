@@ -771,6 +771,10 @@ ul.slick-dots li.slick-active button {
 .logos-list.clients-slider .slick-list {
   padding: 0 !important;
 }
+.borrowers {
+  background-color: #f2f7fe;
+  margin: 6rem 0;
+}
 /* ==================== TESTIMONIAL SECTION ======================= */
 .testimonial-slider {
   padding-left: 90px;

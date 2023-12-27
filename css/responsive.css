@@ -52,6 +52,17 @@
   /* ============== Loan Calculator CSS End ======================== */
 }
 @media screen and (max-width: 650px) {
+  .borrowers .container {
+    -webkit-flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+  }
+
+  .borrowers .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .hero-section-template {
     height: 35vh;
   }
