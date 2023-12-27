@@ -454,7 +454,7 @@ button:focus {
 .loan-calculator .top h2 {
   margin-top: 0;
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .loan-calculator form {
@@ -542,10 +542,8 @@ button:focus {
 }
 
 .eligibility-heading {
-  font-size: 5.2rem;
-  line-height: 3.2rem;
+  font-size: 5rem;
   font-weight: 700;
-  line-height: 6.4rem;
 }
 
 .testimonails-section {
