@@ -1,6 +1,12 @@
 /*=============== BREAKPOINTS ===============*/
 
 @media screen and (max-width: 1140px) {
+  /*=============== RESUABLE CSS ===============*/
+
+  .title {
+    font-size: 2.3rem;
+  }
+  /*=============== RESUABLE CSS END ===============*/
   .hero-section-heading {
     font-size: 3.5rem;
   }
@@ -61,6 +67,10 @@
   .loan-calculator .result {
     width: 100%;
   }
-}
-@media screen and (min-width: 1140px) {
+  .logos-list,
+  .single-logo .logo-img {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }

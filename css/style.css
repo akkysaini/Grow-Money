@@ -188,6 +188,9 @@ button:focus {
   align-items: center;
   justify-content: center;
 }
+.title{
+  font-size: 3rem;
+}
 
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
@@ -395,7 +398,7 @@ button:focus {
   justify-content: space-between;
 }
 
-.loan-calculator .title {
+.loan-calculator .field-title {
   margin-bottom: 1.6rem;
 }
 .loan-calculator h2 {
