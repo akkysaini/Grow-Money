@@ -362,8 +362,16 @@ button:focus {
   font-weight: 400;
 }
 
-.eligibility-img {
+.eligibility-img-1 {
   background: url("../images/man.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 350px;
+  border-radius: 20px;
+}
+.eligibility-img-2 {
+  background: url("../images/women.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
