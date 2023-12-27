@@ -214,11 +214,15 @@ button:focus {
 /*=============== HERO SECTION CSS ===============*/
 
 .hero-section-template {
-  background: linear-gradient(45deg, #3687c594, rgba(32, 32, 32, 0.356)),
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
     url("../images/finance-stock.jpg") center center/cover;
   background-attachment: fixed;
   width: 100vw;
-  height: 65vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,6 +230,27 @@ button:focus {
 .hero-section-template .hero-title {
   color: var(--white-color);
   font-size: 4rem;
+}
+.custom-shape-divider-bottom-1703699477 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703699477 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 47px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1703699477 .shape-fill {
+  fill: #ffffff;
 }
 
 /* .hero-section-home {
