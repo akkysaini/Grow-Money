@@ -196,6 +196,21 @@ button:focus {
 
 /*=============== HERO SECTION CSS ===============*/
 
+.hero-section-template {
+  background: linear-gradient(45deg, #3687c589, rgba(32, 32, 32, 0.233)),
+    url("../images/finance-stock.jpg") center center/cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section-template .hero-title {
+  color: var(--white-color);
+  font-size: 4rem;
+}
+
 /* .hero-section-home {
   background: url("images/Home\ page.jpg") bottom center/cover;
   width: 100%;

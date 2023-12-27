@@ -52,6 +52,12 @@
   /* ============== Loan Calculator CSS End ======================== */
 }
 @media screen and (max-width: 650px) {
+  .hero-section-template {
+    height: 35vh;
+  }
+  .hero-section-template .hero-title {
+    font-size: 3rem;
+  }
   .logos-list,
   .single-logo .logo-img {
     margin: 0;
