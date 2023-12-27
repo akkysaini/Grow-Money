@@ -245,7 +245,7 @@ function openTab(th) {
 
 // javascript added
 // ======================= COUNTER JAVASCRIPT START ======================
-const myNum = document.querySelectorAll(".count");
+const myNum = document.querySelectorAll(".counter");
 let speed = 200;
 myNum.forEach((myCount) => {
   let target_count = myCount.dataset.count;

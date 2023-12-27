@@ -192,12 +192,29 @@ button:focus {
   font-size: 3rem;
 }
 
+.card-title {
+  font-size: 2rem;
+}
+.bg-primary {
+  background-color: var(--blue-color) !important;
+}
+
+.info-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all ease 0.5s;
+}
+.info-card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
 /*=============== HERO SECTION CSS ===============*/
 
 .hero-section-template {
-  background: linear-gradient(45deg, #3687c589, rgba(32, 32, 32, 0.233)),
+  background: linear-gradient(45deg, #3687c594, rgba(32, 32, 32, 0.356)),
     url("../images/finance-stock.jpg") center center/cover;
   background-attachment: fixed;
   width: 100vw;
@@ -776,23 +793,52 @@ p.lead {
   font-size: 15px;
 }
 
+/* ====================== ABOUT US CSS ================================================= */
+.count {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  left: 50%;
+  top: 145px;
+  z-index: 1;
+  font-weight: 700;
+  background-color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+  color: #15295e;
+  transform: translateX(-50%);
+}
+.statistics-section .bg-img {
+  opacity: 0.2;
+  background-position: top;
+}
+
+.statistics-section .bg-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/overlay-pattern.png);
+}
 /* ====================== Footer CSS ================================================= */
 
 /*** Footer ***/
 .footer {
-  padding: 30px 0 0px;
+  background: rgb(250, 250, 250);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px -4px 5px 0px;
+  position: relative;
+  width: 100%;
 }
 
 .footer .overlay {
   opacity: 0.7;
-}
-
-.footer {
-  position: relative;
-  width: 100%;
 }
 
 .footer ul,
@@ -812,7 +858,7 @@ p.lead {
 }
 
 .footer-main {
-  padding: 40px 0;
+  padding: 30px 0 0 0;
   position: relative;
 }
 
@@ -861,7 +907,7 @@ p.lead {
 }
 
 .footer-contacts {
-  margin-top: 20px;
+  margin-top: 1rem;
   text-align: left;
 }
 
@@ -879,14 +925,12 @@ p.lead {
 }
 
 .footer-item-heading {
-  font-size: 24px;
+  font-size: 2rem;
   color: #ffffff;
-  margin-bottom: 2rem;
-  font-weight: 400;
 }
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  /* padding-top: 20px; */
+  /* padding-top: 1rem; */
   position: relative;
 }
