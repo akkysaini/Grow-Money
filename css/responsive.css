@@ -9,6 +9,13 @@
   .eligibility-heading {
     font-size: 3.3rem;
   }
+  .hero-section-template {
+    height: 60vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   /*=============== RESUABLE CSS END ===============*/
   .hero-section-heading {
     font-size: 3.5rem;
@@ -68,6 +75,10 @@
   }
   .hero-section-template {
     height: 35vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .hero-section-template .hero-title {
     font-size: 3rem;

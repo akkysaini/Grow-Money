@@ -219,10 +219,13 @@ button:focus {
       hsla(206, 57%, 49%, 0.5),
       rgba(32, 32, 32, 0.5)
     ),
-    url("../images/finance-stock.jpg") center center/cover;
+    url("../images/finance-stock.jpg");
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
