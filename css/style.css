@@ -214,6 +214,13 @@ button:focus {
 /*=============== HERO SECTION CSS ===============*/
 
 .hero-section-template {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section-about {
   background: linear-gradient(
       45deg,
       hsla(206, 57%, 49%, 0.5),
@@ -224,11 +231,66 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.hero-section-achiements {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/achievements.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-our-team {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/our_team.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-policy {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/our_policy.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-enterprise {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/micro_enterprise_loan.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-loan-property {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/loan_property.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-section-template .hero-title {
   color: var(--white-color);
