@@ -219,6 +219,18 @@ button:focus {
   background-size: cover;
   z-index: 0;
 }
+.section {
+  padding: 65px 0;
+  position: relative;
+}
+
+.section-small {
+  padding: 40px 0;
+  position: relative;
+}
+.text-primary {
+  color: var(--blue-color) !important;
+}
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
 /*=============== HERO SECTION CSS ===============*/
@@ -938,6 +950,37 @@ p.lead {
   margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 40px;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.stats:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 1px;
+  height: 70%;
+  top: 15%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.stats:last-child:before {
+  display: none;
+}
+
+.stats .text-warning {
+  font-size: 36px;
+}
+
+.stats h5 {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
 }
 /* ====================== Footer CSS ================================================= */
 
