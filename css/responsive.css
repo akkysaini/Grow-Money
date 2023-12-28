@@ -104,4 +104,12 @@
     width: 100%;
     max-width: 100%;
   }
+  .footer-bottom .terms-conditions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-bottom .terms-conditions a {
+    margin-left: 5px;
+  }
 }

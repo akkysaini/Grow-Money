@@ -1048,4 +1048,9 @@ p.lead {
   border-top: 1px solid rgb(202, 202, 202);
   /* padding-top: 1rem; */
   position: relative;
+  font-size: 14px;
+}
+.footer-bottom a,
+.footer-bottom p {
+  font-size: 14px;
 }
