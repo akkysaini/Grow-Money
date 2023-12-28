@@ -229,7 +229,7 @@ button:focus {
   position: relative;
 }
 .text-primary {
-  color: var(--blue-color) !important;
+  color: var(--blue) !important;
 }
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
@@ -310,7 +310,7 @@ button:focus {
     ),
     url("../images/loan_property.jpg");
   background-attachment: fixed;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -339,51 +339,6 @@ button:focus {
 .custom-shape-divider-bottom-1703699477 .shape-fill {
   fill: #ffffff;
 }
-
-/* .hero-section-home {
-  background: url("images/Home\ page.jpg") bottom center/cover;
-  width: 100%;
-  height: 100vh;
-} */
-
-/* .hero-section-partnership-model {
-  background: url("/images/Partnership\ model.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.hero-section-property-model {
-  background: url("/images/Home\ Loan.jpg");
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
-.hero-section-msme-model {
-  background: url("/images/Micro\ Enterprise.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 100vh;
-  width: 100%;
-}
-
-.hero-section-business-loan {
-  background: url("/images/Business\ loan.jpg");
-  background-size: cover;
-  background-position: top;
-  height: 100vh;
-  width: 100%;
-}
-
-.hero-section-vehicle {
-  background: url("/images/Car\ Loan.jpg");
-  background-size: cover;
-  background-position: bottom;
-  height: 100vh;
-} */
 
 .color-black {
   color: #000 !important;
@@ -460,6 +415,7 @@ button:focus {
   background-color: white;
   padding: 0.8rem;
   border-radius: 0.8rem;
+  width: 50px;
 }
 
 .col-grid {
@@ -986,12 +942,12 @@ p.lead {
 
 /*** Footer ***/
 .footer {
-  background: rgb(250, 250, 250);
+  background: rgb(243, 243, 243);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: 40px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px -4px 5px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.06) 0px -4px 5px 0px; */
   position: relative;
   width: 100%;
 }
@@ -1089,7 +1045,7 @@ p.lead {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgb(202, 202, 202);
   /* padding-top: 1rem; */
   position: relative;
 }
