@@ -208,36 +208,6 @@ $(document).ready(function () {
     },
   });
   // Numbering
-  var counted = 0;
-  $(window).scroll(function () {
-    var oTop = $("#counter").offset().top - window.innerHeight;
-    if (counted == 0 && $(window).scrollTop() > oTop) {
-      $(".counting").each(function () {
-        var $this = $(this),
-          countTo = $this.attr("data-count");
-        $({
-          countNum: $this.text(),
-        }).animate(
-          {
-            countNum: countTo,
-          },
-
-          {
-            duration: 2000,
-            easing: "swing",
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-              //alert('finished');
-            },
-          }
-        );
-      });
-      counted = 1;
-    }
-  });
 });
 function openTab(th) {
   window.open(th.name, "_blank");
@@ -317,5 +287,35 @@ $(window).on("scroll", function () {
   } else {
     //remove the background property so it comes transparent again (defined in your css)
     $(".header-transparent").removeClass("active-header");
+  }
+});
+var counted = 0;
+$(window).scroll(function () {
+  var oTop = $("#counter").offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+    $(".counting").each(function () {
+      var $this = $(this),
+        countTo = $this.attr("data-count");
+      $({
+        countNum: $this.text(),
+      }).animate(
+        {
+          countNum: countTo,
+        },
+
+        {
+          duration: 2000,
+          easing: "swing",
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+            //alert('finished');
+          },
+        }
+      );
+    });
+    counted = 1;
   }
 });
