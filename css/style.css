@@ -229,7 +229,7 @@ button:focus {
   position: relative;
 }
 .text-primary {
-  color: var(--blue) !important;
+  color: var(--blue-color);
 }
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
@@ -251,6 +251,90 @@ button:focus {
     url("../images/finance-stock.jpg");
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-contact {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/contact_us.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-two-wheelers {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/finance_two_wheeler.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-financials {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/financials.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-partnership {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/partnership_model.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-supply-chain {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/supply_chain_finance.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-vehicle {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/vehicle_loan.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-corporate-lending {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/corporate_lending.jpg");
+  background-attachment: fixed;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
