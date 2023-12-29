@@ -20,19 +20,15 @@
     <!--=============== ANIMATION CSS ===============-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .responsive-cell-block {
+        /* .responsive-cell-block {
             min-height: 75px;
-        }
+        } */
 
         .text-blk {
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            line-height: 25px;
+            margin: 0 0 0 0; 
         }
 
-        .responsive-container-block {
+        /* .responsive-container-block {
             min-height: 75px;
             height: fit-content;
             width: 100%;
@@ -43,24 +39,17 @@
             margin-bottom: 0px;
             margin-left: auto;
             justify-content: space-evenly;
-        }
+        } */
 
         .team-head-text {
             font-size: 48px;
             font-weight: 900;
             text-align: center;
-        }
-
-        .team-head-text {
-            line-height: 50px;
             width: 100%;
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 50px;
-            margin-left: 0px;
+            margin: 0 0 5rem 0; 
         }
 
-        .team-container {
+        /* .team-container {
             max-width: 1380px;
             margin-top: 60px;
             margin-right: auto;
@@ -70,7 +59,7 @@
             padding-right: 30px;
             padding-bottom: 0px;
             padding-left: 30px;
-        }
+        } */
 
         .card {
             text-align: center;
@@ -78,41 +67,29 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 30px;
-            padding-right: 25px;
-            padding-bottom: 30px;
-            padding-left: 25px;
+            padding:3rem 2.5rem;
         }
 
-        .card-container {
+        /* .card-container {
             width: 280px;
             margin-top: 0px;
             margin-right: 10px;
             margin-bottom: 25px;
             margin-left: 10px;
-        }
+        } */
 
         .name {
-            margin-top: 20px;
-            margin-right: 0px;
-            margin-bottom: 5px;
-            margin-left: 0px;
             font-size: 18px;
             font-weight: 800;
+            margin: 2rem 0 0.5rem 0; 
         }
 
         .position {
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 10px;
-            margin-left: 0px;
+            margin: 0 0 1rem 0;            
         }
 
         .feature-text {
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 20px;
-            margin-left: 0px;
+            margin: 0 0 2rem 0;            
             color: rgb(122, 122, 122);
             line-height: 30px;
         }
@@ -133,7 +110,7 @@
             max-width: 100%;
         }
 
-        @media (max-width: 500px) {
+        /* @media (max-width: 500px) {
             .card-container {
                 width: 100%;
                 margin-top: 0px;
@@ -141,14 +118,9 @@
                 margin-bottom: 25px;
                 margin-left: 0px;
             }
-        }
+        } */
 
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
-
-
-
-
-        .wk-desk-1 {
+        /* .wk-desk-1 {
             width: 8.333333%;
         }
 
@@ -194,9 +166,9 @@
 
         .wk-desk-12 {
             width: 100%;
-        }
+        } */
 
-        @media (max-width: 1024px) {
+        /* @media (max-width: 1024px) {
             .wk-ipadp-1 {
                 width: 8.333333%;
             }
@@ -244,9 +216,9 @@
             .wk-ipadp-12 {
                 width: 100%;
             }
-        }
+        } */
 
-        @media (max-width: 768px) {
+        /* @media (max-width: 768px) {
             .wk-tab-1 {
                 width: 8.333333%;
             }
@@ -344,7 +316,7 @@
             .wk-mobile-12 {
                 width: 100%;
             }
-        }
+        } */
     </style>
 </head>
 
@@ -487,20 +459,20 @@
     </div>
     <!--=============== HERO SECTION ENDS ===============-->
     <!--=============== TEAM SECTION START ===============-->
-    <div class="responsive-container-block team-container">
-        <h1 class="my-5 title">Grow Money Team</h1>
-        <div class="responsive-container-block">
-            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+    <div class="container my-5">
+        <!-- <h1 class="my-5 title">Grow Money Team</h1> -->
+        <div class="row ">
+            <div class=" col-lg-3  col-md-3 col-sm-12 card-container">
                 <div class="card">
                     <div class="team-image-wrapper">
                         <img class="team-member-image"
-                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
                     </div>
                     <p class="text-blk name">
-                        Davis George
+                        Manoj Kumar Bansal
                     </p>
                     <p class="text-blk position">
-                        CEO
+                        DIRECTOR
                     </p>
                     <p class="text-blk feature-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -517,7 +489,88 @@
                     </div>
                 </div>
             </div>
-            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="  col-lg-3  col-md-3 col-sm-12 card-container">
+                <div class="card">
+                    <div class="team-image-wrapper">
+                        <img class="team-member-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+                    </div>
+                    <p class="text-blk name">
+                        Neeru Bansal
+                    </p>
+                    <p class="text-blk position">
+                        DIRECTOR
+                    </p>
+                    <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="twitter-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="facebook-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-3 col-sm-12 card-container">
+                <div class="card">
+                    <div class="team-image-wrapper">
+                        <img class="team-member-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+                    </div>
+                    <p class="text-blk name">
+                        Devi Dass Agarwal
+                    </p>
+                    <p class="text-blk position">
+                        Independent Director
+                    </p>
+                    <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="twitter-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="facebook-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-md-3 col-sm-12 card-container">
+                <div class="card">
+                    <div class="team-image-wrapper">
+                        <img class="team-member-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+                    </div>
+                    <p class="text-blk name">
+                        Gurmeet Singh Grewal
+                    </p>
+                    <p class="text-blk position">
+                        Independent Director
+                    </p>
+                    <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="twitter-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="facebook-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
                 <div class="card">
                     <div class="team-image-wrapper">
                         <img class="team-member-image"
@@ -555,6 +608,38 @@
                     </p>
                     <p class="text-blk position">
                         CEO
+                    </p>
+                    <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="twitter-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="facebook-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="responsive-container-block team-container">
+        <h1 class="my-5 title">Grow Money Team</h1>
+        <div class="responsive-container-block">
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                    <div class="team-image-wrapper">
+                        <img class="team-member-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png">
+                    </div>
+                    <p class="text-blk name">
+                        Manoj Kumar Bansal
+                    </p>
+                    <p class="text-blk position">
+                        DIRECTOR
                     </p>
                     <p class="text-blk feature-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -578,10 +663,64 @@
                             src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
                     </div>
                     <p class="text-blk name">
-                        Davis George
+                        Neeru Bansal
                     </p>
                     <p class="text-blk position">
-                        CEO
+                        DIRECTOR
+                    </p>
+                    <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="twitter-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="facebook-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                    <div class="team-image-wrapper">
+                        <img class="team-member-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.14.png">
+                    </div>
+                    <p class="text-blk name">
+                        Devi Dass Agarwal
+                    </p>
+                    <p class="text-blk position">
+                        Independent Director
+                    </p>
+                    <p class="text-blk feature-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img class="twitter-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img class="facebook-icon"
+                                src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+                <div class="card">
+                    <div class="team-image-wrapper">
+                        <img class="team-member-image"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET7.15.png">
+                    </div>
+                    <p class="text-blk name">
+                        Gurmeet Singh Grewal
+                    </p>
+                    <p class="text-blk position">
+                        Independent Director
                     </p>
                     <p class="text-blk feature-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -652,10 +791,8 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </div>
+    </div> -->
     <!--=============== TEAM SECTION END ===============-->
 
 
