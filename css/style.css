@@ -11,8 +11,9 @@ html {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --black-color: hsl(0, 0%, 0%);
-  --black-color-light: hsl(220, 24%, 15%);
-  --gray-color-lighten: hsl(0, 0%, 94%);
+  --black-color-light: hsl(0, 0%, 21%);
+  --gray-color-dark: #d3d3d3;
+  --gray-color-lighten: #f7f7f7;
   --white-color: #ffffff;
   --blue-color: #3685c5;
   /*========== Font and typography ==========*/
@@ -41,7 +42,9 @@ html {
   padding: 0;
   margin: 0;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -57,6 +60,7 @@ a {
   text-decoration: none;
 }
 p {
+  font-weight: var(--font-regular);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -1180,7 +1184,7 @@ footer a {
   font-weight: var(--font-light);
 }
 .footer {
-  background: rgb(247, 247, 247);
+  background: var(--gray-color-lighten);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1194,59 +1198,12 @@ footer a {
   opacity: 0.7;
 }
 
-.footer ul,
-.footer ol {
-  list-style: none;
-  padding-left: 0;
-  line-height: 1.6;
-}
-
-.footer a {
-  text-decoration: none;
-  color: #f8f9fa;
-}
-
 .footer a:hover {
   color: #00aeef !important;
 }
 
 .footer-main {
-  padding: 30px 0 0 0;
-  position: relative;
-}
-
-.footer-company-info .logo {
-  margin-bottom: 20px;
-  height: auto;
-}
-
-.footer-social-links {
-  display: flex;
-  list-style: none;
-  margin: 20px 0 0;
-  padding: 0;
-  transition: all 0.2s;
-}
-
-.footer-social-links li a {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-.footer-social-links li a:hover {
-  background-color: #00aeef;
-  color: #ffffff !important;
+  padding: 3rem 0 1rem 0;
 }
 
 .footer-menu li {
@@ -1278,17 +1235,17 @@ footer a {
 }
 
 .footer-item-heading {
-  font-size: 2rem;
-  color: #ffffff;
+  font-size: 1.8rem;
+  color: var(--black-color);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgb(202, 202, 202);
-  /* padding-top: 1rem; */
-  position: relative;
-  font-size: 14px;
+  border-top: 1px solid var(--gray-color-dark);
+  padding-top: 0.8rem;
 }
 .footer-bottom a,
-.footer-bottom p {
-  font-size: 14px;
+.footer-bottom p,
+.footer-bottom {
+  font-size: 1.3rem;
+  font-weight: var(--font-regular);
 }
