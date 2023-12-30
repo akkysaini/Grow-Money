@@ -224,17 +224,53 @@ button:focus {
   background-size: cover;
   z-index: 0;
 }
-.section {
-  padding: 65px 0;
-  position: relative;
-}
-
-.section-small {
-  padding: 40px 0;
-  position: relative;
+section{
+  margin: 50px 0;
 }
 .text-primary {
   color: var(--blue-color);
+}
+.my--5 {
+  margin: 5px 0;
+}
+.my--10 {
+  margin: 10px 0;
+}
+.my--15 {
+  margin: 15px 0;
+}
+.my--20 {
+  margin: 20px 0;
+}
+.my--30 {
+  margin: 30px 0;
+}
+.my--40 {
+  margin: 40px 0;
+}
+.my--50 {
+  margin: 50px 0;
+}
+.py--5 {
+  margin: 5px 0;
+}
+.py--10 {
+  margin: 10px 0;
+}
+.py--15 {
+  margin: 15px 0;
+}
+.py--20 {
+  margin: 20px 0;
+}
+.py--30 {
+  margin: 30px 0;
+}
+.py--40 {
+  margin: 40px 0;
+}
+.py--50 {
+  margin: 50px 0;
 }
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
@@ -660,7 +696,7 @@ button:focus {
   font-size: 6rem;
 }
 
-.eligibility-div2 {
+.eligibility-box{
   border: 1px solid #b8b1b1;
   border-radius: 20px;
 }
