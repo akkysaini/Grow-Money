@@ -154,7 +154,11 @@
   ul.time-line li .dot {
     margin-left: 0;
   }
-
+  .footer-main .quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0px !important;
+  }
   .footer-bottom .terms-conditions {
     display: flex;
     justify-content: center;
