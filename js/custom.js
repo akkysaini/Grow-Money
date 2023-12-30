@@ -165,34 +165,34 @@ $(document).ready(function () {
   //   $(".header .nav").slideToggle();
   //   $(this).toggleClass("is-active");
   // });
-  /**** Scroll Top  ****/
-  $(window).scroll(function () {
-    /* Scroll Top */
-    var offset = 500;
-    var duration = 400;
-    if ($(this).scrollTop() > offset) {
-      $(".smoth_scroll").fadeIn(duration);
-    } else {
-      $(".smoth_scroll").fadeOut(duration);
-    }
-    return false;
-  });
-  $(".smoth_scroll").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 600);
-  });
-  $('a[href="#"]').bind("click", function (event) {
-    var $anchor = $(this);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $($anchor.attr("href")).offset().top - 50,
-        },
-        1250,
-        "easeInOutExpo"
-      );
-    event.preventDefault();
-  });
+  // /**** Scroll Top  ****/
+  // $(window).scroll(function () {
+  //   /* Scroll Top */
+  //   var offset = 500;
+  //   var duration = 400;
+  //   if ($(this).scrollTop() > offset) {
+  //     $(".smoth_scroll").fadeIn(duration);
+  //   } else {
+  //     $(".smoth_scroll").fadeOut(duration);
+  //   }
+  //   return false;
+  // });
+  // $(".smoth_scroll").click(function () {
+  //   $("html, body").animate({ scrollTop: 0 }, 600);
+  // });
+  // $('a[href="#"]').bind("click", function (event) {
+  //   var $anchor = $(this);
+  //   $("html, body")
+  //     .stop()
+  //     .animate(
+  //       {
+  //         scrollTop: $($anchor.attr("href")).offset().top - 50,
+  //       },
+  //       1250,
+  //       "easeInOutExpo"
+  //     );
+  //   event.preventDefault();
+  // });
   $("#gallery-1").magnificPopup({
     delegate: "a", // child items selector, by clicking on it popup will open
     type: "image",
@@ -318,4 +318,32 @@ $(window).scroll(function () {
     });
     counted = 1;
   }
+});
+/**** Scroll Top  ****/
+$(window).scroll(function () {
+  /* Scroll Top */
+  var offset = 500;
+  var duration = 400;
+  if ($(this).scrollTop() > offset) {
+    $(".smoth_scroll").fadeIn(duration);
+  } else {
+    $(".smoth_scroll").fadeOut(duration);
+  }
+  return false;
+});
+$(".smoth_scroll").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 700);
+});
+$('a[href="#"]').bind("click", function (event) {
+  var $anchor = $(this);
+  $("html, body")
+    .stop()
+    .animate(
+      {
+        scrollTop: $($anchor.attr("href")).offset().top - 50,
+      },
+      1250,
+      "easeInOutExpo"
+    );
+  event.preventDefault();
 });

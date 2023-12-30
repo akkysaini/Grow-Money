@@ -1,7 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;900&display=swap");
 html {
+  /*.5rem = 5px | 1rem = 10px ...*/
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 /*=============== VARIABLES CSS ===============*/
@@ -9,18 +11,16 @@ html {
   --header-height: 3.5rem;
   --header-height: 5.6rem;
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 21%);
-  --gray-color-dark: #d3d3d3;
+  --gray-color-dark: #e9e9e9;
   --gray-color-lighten: #f7f7f7;
   --white-color: #ffffff;
   --blue-color: #3685c5;
+  --dark-blue-color: #15295e;
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Mulish", sans-serif;
-  /* --normal-font-size: 0.938rem; */
-  --normal-font-size: 1.6rem;
+  --normal-font-size: 1.5rem;
   /*========== Font weight ==========*/
   --font-light: 300;
   --font-regular: 400;
@@ -42,9 +42,7 @@ html {
   padding: 0;
   margin: 0;
 }
-html {
-  overflow-x: hidden;
-}
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -1248,4 +1246,46 @@ footer a {
 .footer-bottom {
   font-size: 1.3rem;
   font-weight: var(--font-regular);
+}
+
+/* ====================== SCROLL TOP BUTTON CSS ===================================== */
+
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 35px;
+  right: 80px;
+  z-index: 99;
+  text-align: center;
+  color: var(--white-color);
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--blue-color);
+}
+.scroll-top:hover {
+  background: var(--gray-color-dark);
+  color: var(--blue-color);
+}
+
+.scroll-top:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: -webkit-radial-gradient(
+    center,
+    ellipse,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
 }
