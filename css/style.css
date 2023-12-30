@@ -434,7 +434,7 @@ button:focus {
   left: 0;
   width: 100%;
   padding: 0;
-  z-index: 10000;
+  z-index: 99;
   border: none !important;
   transition: all 0.2s ease-in-out;
   height: auto;
@@ -1113,6 +1113,60 @@ ul.time-line li p {
 
 .time-line-sec {
   margin-top: -130px;
+}
+/* ====================== Team Page CSS ================================================= */
+.text-blk {
+  margin: 0 0 0 0;
+}
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2.5rem;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.card:hover {
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px -7px;
+}
+.name {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.position {
+  margin: 0 0 1rem 0;
+}
+
+.feature-text {
+  margin: 0 0 2rem 0;
+  color: rgb(122, 122, 122);
+}
+
+.social-icons {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-image-wrapper {
+  clip-path: circle(50% at 50% 50%);
+  width: 130px;
+  height: 130px;
+}
+
+.team-member-image {
+  max-width: 100%;
 }
 /* ====================== Footer CSS ================================================= */
 
