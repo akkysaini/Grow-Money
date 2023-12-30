@@ -21,6 +21,7 @@ html {
   /* --normal-font-size: 0.938rem; */
   --normal-font-size: 1.6rem;
   /*========== Font weight ==========*/
+  --font-light: 300;
   --font-regular: 400;
   --font-semi-bold: 600;
   /*========== z index ==========*/
@@ -54,6 +55,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+p {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -1171,8 +1174,13 @@ ul.time-line li p {
 /* ====================== Footer CSS ================================================= */
 
 /*** Footer ***/
+footer,
+footer p,
+footer a {
+  font-weight: var(--font-light);
+}
 .footer {
-  background: rgb(243, 243, 243);
+  background: rgb(247, 247, 247);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
