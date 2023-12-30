@@ -16,8 +16,9 @@ html {
   --gray-color-dark: #e9e9e9;
   --gray-color-lighten: #f7f7f7;
   --white-color: #ffffff;
+  --blue-color-light: #f2f7fe;
   --blue-color: #3685c5;
-  --dark-blue-color: #15295e;
+  --blue-color-dark: #15295e;
   /*========== Font and typography ==========*/
   --body-font: "Mulish", sans-serif;
   --normal-font-size: 1.5rem;
@@ -224,7 +225,7 @@ button:focus {
   background-size: cover;
   z-index: 0;
 }
-section{
+section {
   margin: 50px 0;
 }
 .text-primary {
@@ -696,7 +697,7 @@ section{
   font-size: 6rem;
 }
 
-.eligibility-box{
+.eligibility-box {
   border: 1px solid #b8b1b1;
   border-radius: 20px;
 }
@@ -712,10 +713,6 @@ section{
 .eligibility-heading {
   font-size: 5rem;
   font-weight: 700;
-}
-
-.testimonails-section {
-  background-color: white !important;
 }
 
 .hero-wrapper-heading {
@@ -938,14 +935,17 @@ ul.slick-dots li.slick-active button {
   padding: 0 !important;
 }
 .borrowers {
-  background-color: #f2f7fe;
+  background: var(--blue-color-light);
   margin: 6rem 0;
 }
 /* ==================== TESTIMONIAL SECTION ======================= */
+.testimonails-section {
+  background: var(--blue-color-light);
+  padding: 6rem 0;
+}
 .testimonial-slider {
   padding-left: 90px;
   padding-right: 90px;
-  position: relative;
 }
 
 .testimonial-slider::before,
@@ -974,26 +974,17 @@ ul.slick-dots li.slick-active button {
 }
 
 .testimonial-slider p {
-  font-size: 20px;
+  font-size: 1.7rem;
   margin-bottom: 30px;
-  font-weight: 400;
   min-height: 80px;
 }
 
 .testimonial-slider .slide {
   border: 1px solid #abcfed;
-  padding: 50px !important;
-  border-radius: 20px;
+  padding: 50px;
+  border-radius: 10px;
   background-color: #d5e7f6;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 20px;
-}
-.testimonails-section {
-  background-color: white !important;
-}
-p.lead {
-  font-size: 15px;
+  margin: 0 1.5rem 1.5rem 2rem;
 }
 
 /* ====================== ABOUT US CSS ================================================= */

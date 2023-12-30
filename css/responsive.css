@@ -44,8 +44,7 @@
   }
 
   .testimonial-slider .slide {
-    padding: 10px !important;
-    margin: 0;
+    padding: 20px;
   }
 
   /* ============== Loan Calculator CSS ======================== */
@@ -62,6 +61,11 @@
   /* ============== Loan Calculator CSS End ======================== */
 }
 @media screen and (max-width: 650px) {
+  .testimonial-slider:before,
+  .testimonial-slider:after {
+    display: none;
+  }
+
   .borrowers .container {
     -webkit-flex-flow: wrap;
     -ms-flex-flow: wrap;
