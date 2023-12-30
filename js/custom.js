@@ -282,11 +282,11 @@ $(".testimonial-slider").slick({
   pauseOnHover: false,
 });
 $(window).on("scroll", function () {
-  if ($(window).scrollTop() > 100) {
-    $(".header-transparent").addClass("active-header");
+  if ($(window).scrollTop() > 90) {
+    $(".header").addClass("active-header");
   } else {
     //remove the background property so it comes transparent again (defined in your css)
-    $(".header-transparent").removeClass("active-header");
+    $(".header").removeClass("active-header");
   }
 });
 var counted = 0;

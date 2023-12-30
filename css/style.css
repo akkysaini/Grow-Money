@@ -3,7 +3,6 @@
 html {
   /*.5rem = 5px | 1rem = 10px ...*/
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 /*=============== VARIABLES CSS ===============*/
@@ -48,6 +47,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   overflow-x: hidden;
+  position: relative;
 }
 
 ul {
@@ -483,16 +483,7 @@ section {
   background-color: transparent;
 }
 
-.active-header {
-  background-color: #fff;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-}
 
-.active-header a {
-  color: #000 !important;
-}
 
 .hero-section-image {
   background-image: linear-gradient(45deg, #3687c589, rgba(32, 32, 32, 0.196)),
