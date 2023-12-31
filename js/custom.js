@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  AOS.init();
   /**** Single Slide Slider  ****/
   $(".banner-slider").slick({
     dots: false,
