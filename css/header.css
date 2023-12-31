@@ -50,7 +50,8 @@
   height: max-content;
   inset: 0;
   margin: auto;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: var(--blue-color);
   cursor: pointer;
   transition: opacity 0.1s, transform 0.4s;
 }
