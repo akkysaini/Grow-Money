@@ -1280,6 +1280,7 @@ footer a {
   padding: 8px;
   border-radius: 50%;
   background: var(--blue-color);
+  opacity: 0;
 }
 .scroll-top:hover {
   background: var(--gray-color-dark);

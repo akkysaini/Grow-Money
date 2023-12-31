@@ -320,30 +320,16 @@ $(window).scroll(function () {
   }
 });
 /**** Scroll Top  ****/
-$(window).scroll(function () {
-  /* Scroll Top */
-  var offset = 500;
-  var duration = 400;
-  if ($(this).scrollTop() > offset) {
-    $(".smoth_scroll").fadeIn(duration);
+const scrollTop = document.querySelector(".scroll-top");
+let myScrollFunc = function () {
+  let y = window.scrollY;
+  if (y >= 550) {
+    scrollTop.style.opacity = 1;
   } else {
-    $(".smoth_scroll").fadeOut(duration);
+    scrollTop.style.opacity = 0;
   }
-  return false;
-});
+};
+window.addEventListener("scroll", myScrollFunc);
 $(".smoth_scroll").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 700);
-});
-$('a[href="#"]').bind("click", function (event) {
-  var $anchor = $(this);
-  $("html, body")
-    .stop()
-    .animate(
-      {
-        scrollTop: $($anchor.attr("href")).offset().top - 50,
-      },
-      1250,
-      "easeInOutExpo"
-    );
-  event.preventDefault();
 });
