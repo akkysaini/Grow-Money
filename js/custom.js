@@ -20,36 +20,36 @@ $(document).ready(function () {
   //   cssEase: "linear",
   //   pauseOnHover: false,
   // });
-  $(".service-slider").slick({
-    dots: true,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 4,
-    centerMode: true,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 380,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+  // $(".service-slider").slick({
+  //   dots: true,
+  //   arrows: false,
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   centerMode: true,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 5000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 992,
+  //       settings: {
+  //         slidesToShow: 3,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 380,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // });
 
   $(".timeline-slider").slick({
     slidesToShow: 1,
@@ -331,4 +331,34 @@ let myScrollFunc = function () {
 window.addEventListener("scroll", myScrollFunc);
 $(".smoth_scroll").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 700);
+});
+$(".service-slider").slick({
+  dots: true,
+  arrows: true,
+  infinite: true,
+  slidesToShow: 4,
+  centerMode: true,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });

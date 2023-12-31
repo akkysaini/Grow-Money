@@ -821,7 +821,7 @@ section {
 .slick-arrow {
   width: 40px;
   height: 40px;
-  background-color: rgba(30, 55, 109, 0.7);
+  background-color: var(--white-color);
   background-image: url(../images/icons/arrow-right.svg);
   background-size: 10px;
   background-repeat: no-repeat;
@@ -834,7 +834,7 @@ section {
   top: 50%;
   z-index: 2;
   margin-top: -20px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 50%;
 }
 
 .slick-prev {
@@ -929,6 +929,122 @@ ul.slick-dots li.slick-active button {
 .borrowers {
   background: var(--blue-color-light);
   margin: 6rem 0;
+}
+
+/* ==================== SERVICES SECTION ======================= */
+.services-section {
+  background: var(--gray-color-lighten);
+}
+.service-slider .slick-list {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.service-slider .slide-item {
+  margin: 0 1rem;
+}
+
+.service-block {
+  padding: 0 !important;
+  border: 0;
+  overflow: hidden;
+  text-align: left !important;
+}
+
+.service-block * {
+  transition: all 0.3s ease 0s;
+}
+
+.service-block img {
+  min-height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  text-align: left;
+}
+
+.service-block .card-img-overlay {
+  top: initial;
+  padding: 25px;
+  background: -moz-linear-gradient(
+    top,
+    rgba(21, 41, 94, 0.1) 0%,
+    rgba(21, 41, 94, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(21, 41, 94, 0.1) 0%,
+    rgba(21, 41, 94, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 41, 94, 0.1) 0%,
+    rgba(21, 41, 94, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a15295e', endColorstr='#15295e', GradientType=0);
+}
+
+.service-block:hover .card-img-overlay {
+  top: 0;
+  align-items: center;
+}
+
+.service-block:hover img {
+  transform: scale(1.1);
+}
+
+.service-block:hover .card-img-overlay,
+.service-block:focus .card-img-overlay {
+  background: -moz-linear-gradient(
+    top,
+    rgba(21, 41, 94, 1) 0%,
+    rgba(21, 41, 94, 0.1) 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(21, 41, 94, 1) 0%,
+    rgba(21, 41, 94, 0.1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 41, 94, 1) 0%,
+    rgba(21, 41, 94, 0.1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#15295e', endColorstr='#1a15295e', GradientType=0);
+}
+
+.service-block .card-img-overlay .card-text {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: -400px;
+}
+
+.service-block .card-img-overlay .btn {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  bottom: -400px;
+  left: 25px;
+}
+
+.service-block:hover .card-img-overlay .card-text {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  bottom: 0;
+}
+
+.service-block:hover .card-img-overlay .card-title {
+  margin-bottom: 20px;
+}
+
+.service-block:hover .card-img-overlay .btn {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  bottom: 25px;
 }
 /* ==================== TESTIMONIAL SECTION ======================= */
 .testimonails-section {
