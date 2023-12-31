@@ -16,6 +16,9 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .section {
+    padding: 3rem 0;
+  }
   /*=============== RESUABLE CSS END ===============*/
   .hero-section-heading {
     font-size: 3.5rem;
