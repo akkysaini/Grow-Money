@@ -78,6 +78,12 @@ p {
 .bg-dark {
   background-color: var(--blue-color-dark) !important;
 }
+.text-primary {
+  color: var(--blue-color) !important;
+}
+.text-dark {
+  color: var(--blue-color-dark) !important;
+}
 .section {
   padding: 6.5rem 0;
 }
@@ -131,8 +137,8 @@ button:focus {
 }
 
 .btn-primary {
-  background-color: #2c88d1;
-  border-color: #2c88d1;
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
 }
 
 .btn span,
@@ -382,7 +388,7 @@ section {
     ),
     url("../images/vehicle_loan.jpg");
   background-attachment: fixed;
-  background-position:bottom;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
