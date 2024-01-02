@@ -931,7 +931,8 @@ ul.slick-dots li.slick-active button {
 }
 
 .logos-list {
-  max-width: 900px;
+  /* max-width: 900px; */
+  max-width: 95%;
   margin-left: 15px;
 }
 
