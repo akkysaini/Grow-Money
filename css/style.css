@@ -719,6 +719,17 @@ section {
 }
 
 /*** =========================== Slick Slider ============================== ***/
+/* .overlay-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+} */
+
 .slick-slider {
   position: relative;
   display: block;
