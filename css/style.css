@@ -63,6 +63,21 @@ p {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.bg-light {
+  background-color: var(--gray-color-lighten) !important;
+}
+
+.bg-white {
+  background-color: var(--white-color);
+}
+
+.bg-primary {
+  background-color: var(--blue-color) !important;
+}
+
+.bg-dark {
+  background-color: var(--blue-color-dark) !important;
+}
 .section {
   padding: 6.5rem 0;
 }
@@ -1319,14 +1334,41 @@ ul.time-line li p {
 .team-member-image {
   max-width: 100%;
 }
+.policy-cards .card-body {
+  padding: 30px;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid var(--gray-color-lighten);
+}
+.policy-cards .card-header {
+  background: #f7f7f7;
+}
+.pro-item {
+  background-color: #15295e;
+  border-radius: 100px;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto 10px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.pro-item .icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+}
 /* ====================== Footer CSS ================================================= */
 
 /*** Footer ***/
 footer,
 footer p,
 footer a {
+  font-size: 1.5rem;
   font-weight: var(--font-light);
 }
+
 .footer {
   background: var(--gray-color-lighten);
   background-repeat: no-repeat;
@@ -1379,8 +1421,10 @@ footer a {
 }
 
 .footer-item-heading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
 }
 
 .footer-bottom {
