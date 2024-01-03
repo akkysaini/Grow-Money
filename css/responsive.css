@@ -64,6 +64,13 @@
   /* ============== Loan Calculator CSS End ======================== */
 }
 @media screen and (max-width: 650px) {
+  .team-popup .team-content img {
+    width: 75%;
+  }
+  .team-popup {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
   .testimonial-slider:before,
   .testimonial-slider:after {
     display: none;
