@@ -362,3 +362,37 @@ $(".service-slider").slick({
     },
   ],
 });
+// =================== TEAM POPUP JAVASCRIPT ===============================
+
+function toggleManojKumarPopup() {
+  document.getElementById("team-popup-manoj-kumar-bansal").classList.toggle("team-popup-active")
+}
+document.addEventListener('keydown', function (event) {
+  if (event.key === "Escape") {
+      document.getElementById("team-popup-manoj-kumar-bansal").classList.toggle("team-popup-active");
+  }
+});
+function toggleNeeruBansalPopup() {
+  document.getElementById("team-popup-neeru-bansal").classList.toggle("team-popup-active")
+}
+document.addEventListener('keydown', function (event) {
+  if (event.key === "Escape") {
+      document.getElementById("team-popup-neeru-bansal").classList.toggle("team-popup-active");
+  }
+});
+function toggleDeviDassPopup() {
+  document.getElementById("team-popup-devi-dass").classList.toggle("team-popup-active")
+}
+document.addEventListener('keydown', function (event) {
+  if (event.key === "Escape") {
+      document.getElementById("team-popup-devi-dass").classList.toggle("team-popup-active");
+  }
+});
+function toggleGurmeetSinghPopup() {
+  document.getElementById("team-popup-gurmeet-singh").classList.toggle("team-popup-active")
+}
+document.addEventListener('keydown', function (event) {
+  if (event.key === "Escape") {
+      document.getElementById("team-popup-gurmeet-singh").classList.toggle("team-popup-active");
+  }
+});

@@ -19,57 +19,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--=============== ANIMATION CSS ===============-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        .team-popup .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 999;
-            display: none;
-        }
-
-        .team-popup .team-content {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            background: #fff;
-            z-index: 1000;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .team-popup .close-btn {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            font-size: 30px;
-            font-weight: 600;
-            color: #2b2b2b;
-            cursor: pointer;
-        }
-
-        .team-popup.team-popup-active .overlay {
-            display: block;
-        }
-
-        .team-popup-image {
-            max-width: 100%;
-        }
-
-        .team-content {
-            border-radius: 7px;
-        }
-
-        .team-popup.team-popup-active .team-content {
-            transition: all 300ms ease-in-out;
-            transform: translate(-50%, -50%) scale(1);
-        }
-    </style>
-
 </head>
 
 <body>
@@ -209,19 +158,20 @@
         <h1 class="hero-title ">OUR TEAM</h1>
     </div>
     <!--=============== HERO SECTION ENDS ===============-->
+
     <!--=============== TEAM SECTION START ===============-->
     <div class="container my-5">
         <!-- <h1 class="my-5 title">Grow Money Team</h1> -->
         <div class="row ">
             <div onclick="toggleManojKumarPopup()" class="col-lg-3  col-md-6 col-sm-12 my-5">
-                <div class="card">
+                <div class="team-card">
                     <div class="team-image-wrapper">
                         <img class="team-member-image" src="./images/team/manoj.jpg">
                     </div>
                     <p class="text-blk name">
                         Manoj Kumar Bansal
                     </p>
-                    <p class="text-blk position">
+                    <p class="text-blk position text-primary">
                         Director
                     </p>
                     <p class="text-blk feature-text">
@@ -240,14 +190,14 @@
                 </div>
             </div>
             <div onclick="toggleNeeruBansalPopup()" class="  col-lg-3  col-md-6 col-sm-12 my-5">
-                <div class="card">
+                <div class="team-card">
                     <div class="team-image-wrapper">
                         <img class="team-member-image" src="./images/team/Neeru.jpg">
                     </div>
                     <p class="text-blk name">
                         Neeru Bansal
                     </p>
-                    <p class="text-blk position">
+                    <p class="text-blk position text-primary">
                         Director
                     </p>
                     <p class="text-blk feature-text">
@@ -266,14 +216,14 @@
                 </div>
             </div>
             <div onclick="toggleDeviDassPopup()" class=" col-lg-3 col-md-6 col-sm-12 my-5">
-                <div class="card">
+                <div class="team-card">
                     <div class="team-image-wrapper">
                         <img class="team-member-image" src="./images/team/devi-dass.jpeg">
                     </div>
-                    <p class="text-blk name">
+                    <p class="text-blk name ">
                         Devi Dass Agarwal
                     </p>
-                    <p class="text-blk position">
+                    <p class="text-blk position text-primary">
                         Independent Director
                     </p>
                     <p class="text-blk feature-text">
@@ -293,14 +243,14 @@
                 </div>
             </div>
             <div onclick="toggleGurmeetSinghPopup()" class=" col-lg-3 col-md-6 col-sm-12 my-5">
-                <div class="card">
+                <div class="team-card">
                     <div class="team-image-wrapper">
                         <img class="team-member-image" src="./images/team/gurmeet.JPEG">
                     </div>
                     <p class="text-blk name">
                         Gurmeet Singh Grewal
                     </p>
-                    <p class="text-blk position">
+                    <p class="text-blk position text-primary">
                         Independent Director
                     </p>
                     <p class="text-blk feature-text">
@@ -333,7 +283,7 @@
                     <img class="team-popup-image" src="./images/team/manoj.jpg">
                 </div>
                 <div class="col-sm-12 col-md-9  text-start">
-                    <h1 class="text-dark">Manoj Kumar Bansal</h1>
+                    <h1 class="text-dark h2 fw-bold">Manoj Kumar Bansal</h1>
                     <h5 class="text-primary">DIRECTOR</h5>
                     <p>Grow Money Capital Pvt. Ltd. is led by the Chairman CA Manoj Kumar Bansal. He is responsible for
                         the day-to-day management of the NBFC and for building the necessary scale to make Grow Money
@@ -361,7 +311,7 @@
                     <img class="team-popup-image" src="./images/team/Neeru.jpg">
                 </div>
                 <div class="col-sm-12 col-md-9  text-start">
-                    <h1 class="text-dark">Neeru Bansal</h1>
+                    <h1 class="text-dark h2 fw-bold">Neeru Bansal</h1>
                     <h5 class="text-primary">DIRECTOR</h5>
                     <p>Neeru Bansal is the Director of Eclear Leasing & Finance Private Limited. She is responsible for
                         overall strategy, business-enabling operations, organizational development and innovation for
@@ -386,7 +336,7 @@
                     <img class="team-popup-image" src="./images/team/devi-dass.jpeg">
                 </div>
                 <div class="col-sm-12 col-md-9  text-start">
-                    <h1 class="text-dark">Devi Dass Agarwal</h1>
+                    <h1 class="text-dark h2 fw-bold">Devi Dass Agarwal</h1>
                     <h5 class="text-primary">Independent Director</h5>
                     <p>Mr Devi Dass Agarwal qualified CAIIB in 1990 from Indian Institute of Banking & Finance (IIBF),
                         Mumbai. Mr Dass Superannuated as Principal/ AGM of Central Bank Officers’ Training college
@@ -420,7 +370,7 @@
                     <img class="team-popup-image" src="./images/team/gurmeet.JPEG">
                 </div>
                 <div class="col-sm-12 col-md-9  text-start">
-                    <h1 class="text-dark">Gurmeet Singh Grewal</h1>
+                    <h1 class="text-dark h2 fw-bold">Gurmeet Singh Grewal</h1>
                     <h5 class="text-primary">Independent Director</h5>
                     <p>Chartered Accountant, been in practice for more than three decades.
                     </p>
@@ -557,7 +507,7 @@
     <!-- Loan calculator js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="js/loan-calculator.js"></script>
-    <script>
+    <!-- <script>
         function toggleManojKumarPopup() {
             document.getElementById("team-popup-manoj-kumar-bansal").classList.toggle("team-popup-active")
         }
@@ -569,18 +519,28 @@
         function toggleNeeruBansalPopup() {
             document.getElementById("team-popup-neeru-bansal").classList.toggle("team-popup-active")
         }
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                document.getElementById("team-popup-neeru-bansal").classList.toggle("team-popup-active");
+            }
+        });
         function toggleDeviDassPopup() {
             document.getElementById("team-popup-devi-dass").classList.toggle("team-popup-active")
         }
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                document.getElementById("team-popup-devi-dass").classList.toggle("team-popup-active");
+            }
+        });
         function toggleGurmeetSinghPopup() {
             document.getElementById("team-popup-gurmeet-singh").classList.toggle("team-popup-active")
         }
-        // document.addEventListener('keydown', function (event) {
-        //     if (event.key === "Escape") {
-        //         document.getElementById("team-popup-manoj-kumar-bansal").classList.toggle("team-popup-active");
-        //     }
-        // });
-    </script>
+        document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                document.getElementById("team-popup-gurmeet-singh").classList.toggle("team-popup-active");
+            }
+        });
+    </script> -->
 </body>
 
 </html>
