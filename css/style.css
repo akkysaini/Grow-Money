@@ -428,6 +428,18 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero-section-apply {
+  background: linear-gradient(
+      45deg,
+      hsla(206, 57%, 49%, 0.5),
+      rgba(32, 32, 32, 0.5)
+    ),
+    url("../images/apply.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero-section-policy {
   background: linear-gradient(
       45deg,
