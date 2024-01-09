@@ -362,6 +362,7 @@ $(".service-slider").slick({
     },
   ],
 });
+
 // =================== TEAM POPUP JAVASCRIPT ===============================
 
 function toggleManojKumarPopup() {
