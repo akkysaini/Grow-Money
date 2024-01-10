@@ -297,6 +297,13 @@ section {
 .py--50 {
   margin: 50px 0;
 }
+
+form input {
+  font-size: 16px !important;
+}
+form label {
+  font-size: 12px !important;
+}
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
 /*=============== HERO SECTION CSS ===============*/
