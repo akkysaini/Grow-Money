@@ -300,11 +300,13 @@ section {
 
 form input,
 label,
-select,
 textarea {
   font-size: 16px !important;
 }
-
+form select {
+  font-size: 1.3rem !important;
+  padding-bottom: 3px !important;
+}
 input {
   padding: 2rem !important;
 }
@@ -685,10 +687,11 @@ label {
   width: 100%;
   border-radius: 3rem !important;
 }
-.loan-calculator form input, .loan-calculator form input:focus, .loan-calculator form input:active{
+.loan-calculator form input,
+.loan-calculator form input:focus,
+.loan-calculator form input:active {
   outline: none !important;
   border: 2px solid var(--blue-color) !important;
-
 }
 .loan-calculator .result {
   display: flex;
