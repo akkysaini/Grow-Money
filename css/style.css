@@ -680,11 +680,16 @@ label {
 }
 
 .loan-calculator form input {
-  font-size: 20px;
-  padding: 8px 24px;
+  font-size: 20px !important;
+  padding: 8px 24px !important;
   width: 100%;
+  border-radius: 3rem !important;
 }
+.loan-calculator form input, .loan-calculator form input:focus, .loan-calculator form input:active{
+  outline: none !important;
+  border: 2px solid var(--blue-color) !important;
 
+}
 .loan-calculator .result {
   display: flex;
   justify-content: space-between;
