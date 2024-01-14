@@ -175,27 +175,27 @@
             <div class="row col-lg-6  d-flex justify-content-center bg-light p-4 ">
                 <div class="form-style">
                     <h2 class="mb-5">Apply Now</h2>
-                    <form class="mb-4">
+                    <form class="mb-4" action="contactemail.php" method="post">
                         <div class="row">
                             <div id="errormessage"></div>
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-floating mb-4">
-                                    <input type="text" required class="form-control"  id="fname" placeholder="Name">
-                                    <label for="fname" >Name</label>
+                                    <input type="text" required class="form-control" id="fname" placeholder="Name">
+                                    <label for="fname">Name</label>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-floating mb-4">
                                     <input type="email" required class="form-control" name="email" id="email"
                                         placeholder="name@example.com">
-                                    <label for="emailId">Email</label>
+                                    <label for="email">Email</label>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-floating mb-4">
                                     <input type="text" required class="form-control" name="phone" id="phone"
                                         placeholder="Phone Number">
-                                    <label for="phNum">Phone Number</label>
+                                    <label for="phone">Phone Number</label>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-12">
@@ -207,14 +207,12 @@
                                             NBFC-MFI/HFCs &amp; NBFCs</option>
                                         <option value="Term Loan">Term Loan</option>
                                         <option value="Loan Against Property">Loan Against Property</option>
-                                        <option value="Small & Medium Enterprises Loan">Small & Medium
-                                            Enterprises
+                                        <option value="Small & Medium Enterprises Loan">Small & Medium Enterprises
                                             Loan</option>
                                         <option value="Vehicle Finance">Vehicle Finance</option>
                                         <option value="Personal Loan">Personal Loan</option>
                                         <option value="Business Loan">Business Loan</option>
-                                        <option value="Joint Liability Group Loan (JLG)">Joint Liability Group
-                                            Loan
+                                        <option value="Joint Liability Group Loan (JLG)">Joint Liability Group Loan
                                             (JLG)</option>
                                     </select>
                                     <label for="floatingSelect">Type of Loan</label>
@@ -230,19 +228,19 @@
                                 <div class="form-floating mb-4">
                                     <input type="text" class="form-control" id="lamount" name="lamount"
                                         placeholder="Loan Amount">
-                                    <label for="lAmout">Loan Amount</label>
+                                    <label for="lamount">Loan Amount</label>
                                 </div>
                             </div>
                             <div class="col-xs-12">
                                 <div class="form-floating mb-4">
                                     <textarea class="form-control" required placeholder="Message" name="mesage"
                                         id="message" style="height: 100px"></textarea>
-                                    <label for="msg">Message</label>
+                                    <label for="message">Message</label>
                                 </div>
                             </div>
                             <div class="col-xs-12 d-flex justify-content-md-end wrap">
                                 <button class="btn btn-lg btn-primary" name="submit1" type="button"
-                                    id="contactc"><span>Submit</span></button>
+                                    id="contact"><span>Submit</span></button>
                             </div>
                         </div>
                     </form>

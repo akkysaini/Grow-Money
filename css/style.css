@@ -298,12 +298,20 @@ section {
   margin: 50px 0;
 }
 
-form input {
+form input,
+label,
+select,
+textarea {
   font-size: 16px !important;
 }
-form label {
-  font-size: 12px !important;
+
+input {
+  padding: 2rem !important;
 }
+label {
+  margin: -1rem 0 0 0;
+}
+
 /*=============== REUSABLE CSS CLASSES ENDS ===============*/
 
 /*=============== HERO SECTION CSS ===============*/
