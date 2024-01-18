@@ -179,4 +179,11 @@
   .scroll-top {
     right: 20px;
   }
+  .footer {
+    background: url("../images/footerbgmobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: 20px;
+  }
 }
