@@ -1473,7 +1473,7 @@ footer a {
 }
 
 .footer {
-  background: var(--gray-color-lighten);
+  background: url("../images/footerbg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
