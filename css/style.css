@@ -66,6 +66,9 @@ p {
 .bg-light {
   background-color: var(--gray-color-lighten) !important;
 }
+.bg-light-blue {
+  background-color: var(--blue-color-light) !important;
+}
 
 .bg-white {
   background-color: var(--white-color);
@@ -249,9 +252,7 @@ button:focus {
   background-size: cover;
   z-index: 0;
 }
-section {
-  margin: 50px 0;
-}
+
 .text-primary {
   color: var(--blue-color);
 }
@@ -975,13 +976,12 @@ ul.slick-dots li.slick-active button {
 }
 
 .logos-list {
-  /* max-width: 900px; */
   max-width: 95%;
   margin-left: 15px;
 }
 
 .single-logo .logo-img {
-  background-color: #ffffff;
+  background: var(--white-color);
   padding: 10px;
   min-height: 80px;
   margin: 10px;
@@ -998,8 +998,7 @@ ul.slick-dots li.slick-active button {
   padding: 0 !important;
 }
 .borrowers {
-  background: var(--blue-color-light);
-  margin: 6rem 0;
+  margin: 0;
 }
 
 /* ==================== SERVICES SECTION ======================= */
@@ -1010,9 +1009,7 @@ ul.slick-dots li.slick-active button {
 .service-info-card:hover {
   box-shadow: rgba(0, 0, 0, 0.178) 0px 25px 50px -12px;
 }
-.services-section {
-  background: var(--gray-color-lighten);
-}
+
 .service-slider .slick-list {
   padding: 0 !important;
   overflow: hidden;
@@ -1477,8 +1474,6 @@ footer a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: 40px;
-  /* box-shadow: rgba(0, 0, 0, 0.06) 0px -4px 5px 0px; */
   position: relative;
   width: 100%;
 }
