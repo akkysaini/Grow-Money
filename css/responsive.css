@@ -62,6 +62,10 @@
     text-align: center;
   }
   /* ============== Loan Calculator CSS End ======================== */
+
+  .policy-list a {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 650px) {
   .team-popup .team-content img {
@@ -156,7 +160,9 @@
     left: 0;
     top: 22px;
   }
-
+  .policy-list a {
+    width: 47%;
+  }
   ul.time-line li .dot {
     margin-left: 0;
   }

@@ -541,7 +541,7 @@ label {
 .hero-section-image {
   background-image: linear-gradient(45deg, #3687c589, rgba(32, 32, 32, 0.196)),
     url("../images/hero-image.jpg");
-  background-position: top;
+  background-position: bottom;
   height: 100vh;
   background-size: cover;
 }
@@ -1396,6 +1396,43 @@ ul.time-line li p {
 .policy-cards .card-header {
   background: #f7f7f7;
 }
+.policy-list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.policy-list a {
+  background: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.policy-list a:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 48px 50px 0px;
+}
+.policy-list a h3{
+  color: var(--black-color);
+}
+.policy-list a .btn-small{
+  padding: .5rem 2rem;
+  font-size: 10px;
+}
+.policy-list a p{
+  color: var(--blue-color-dark);
+}
+.policy-list a i {
+  color: var(--blue-color-dark);
+  font-size: 25px;
+ margin-bottom: 1rem;
+
+}
+
 .pro-item {
   background-color: #15295e;
   border-radius: 100px;
