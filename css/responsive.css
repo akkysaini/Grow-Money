@@ -69,7 +69,7 @@
 }
 @media screen and (max-width: 650px) {
   .hero-section-image {
-    height: 60vh;
+    height: 350px !important;
   }
   .team-popup .team-content img {
     width: 75%;
