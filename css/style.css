@@ -539,11 +539,10 @@ label {
 }
 .hero-section-image {
   background-image:
-   /* linear-gradient(45deg, #3687c589, rgba(32, 32, 32, 0.1)), */ url("../images/hero-image.jpg");
+   linear-gradient(45deg, #3687c53d, rgba(32, 32, 32, 0.048)),  url("../images/hero-image.jpg");
   background-position: center;
   height: 100vh;
   background-size: cover;
-  background-attachment: fixed !important;
 }
 
 .hero-text .sub-heading {
@@ -1027,7 +1026,7 @@ ul.slick-dots li.slick-active button {
 }
 
 .service-block * {
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease;
 }
 
 .service-block img {

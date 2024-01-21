@@ -68,6 +68,9 @@
   }
 }
 @media screen and (max-width: 650px) {
+  .hero-section-image {
+    height: 60vh;
+  }
   .team-popup .team-content img {
     width: 75%;
   }
