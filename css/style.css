@@ -538,8 +538,8 @@ label {
   background-color: transparent;
 }
 .hero-section-image {
-  background-image:
-   linear-gradient(45deg, #3687c53d, rgba(32, 32, 32, 0.048)),  url("../images/hero-image.jpg");
+  background-image: linear-gradient(45deg, #3687c53d, rgba(32, 32, 32, 0.048)),
+    url("../images/hero-image.jpg");
   background-position: center;
   height: 100vh;
   background-size: cover;
@@ -606,14 +606,38 @@ label {
   background-repeat: no-repeat;
   height: 350px;
   border-radius: 20px;
+  overflow: hidden;
+  transition: all ease 3s;
 }
 .eligibility-img-2 {
-  background: url("../images/women.png");
+  background: url("../images/women.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   height: 350px;
   border-radius: 20px;
+  overflow: hidden;
+  transition: all ease 3s;
+}
+
+.eligibility-img-overlay {
+  background: rgba(0, 0, 0, 0.637);
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+}
+.eligibility-img-2:hover .eligibility-img-overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.eligibility-img-1:hover .eligibility-img-overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .eligibility-img-cont {
@@ -838,7 +862,6 @@ label {
 }
 
 /*** =========================== Slick Slider ============================== ***/
-
 
 .slick-slider {
   position: relative;
