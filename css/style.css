@@ -423,13 +423,13 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-section-achiements {
+.hero-section-gallery {
   background: linear-gradient(
       45deg,
       hsla(206, 57%, 49%, 0.5),
       rgba(32, 32, 32, 0.5)
     ),
-    url("../images/achievements.jpg");
+    url("../images/gallery-1.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -777,7 +777,44 @@ label {
   gap: 20px;
 }
 
-/*** =========================== Slick Slider ============================== ***/
+/* ===========================Gallery======================================= */
+.gallery-section .single-img {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 3px;
+  margin: 15px 0;
+}
+
+.gallery-section .single-img .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -110%;
+  transition: all 0.3s ease 0s;
+  padding: 30px 15px 15px;
+  background: rgb(9, 9, 121);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(9, 9, 121, 0) 0%,
+    rgba(9, 9, 121, 0.7399159492898721) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(9, 9, 121, 0) 0%,
+    rgba(9, 9, 121, 0.7399159492898721) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 121, 0) 0%,
+    rgba(9, 9, 121, 0.7399159492898721) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979", endColorstr="#090979", GradientType=1);
+}
+
+.gallery-section .grid-item:hover .single-img .content,
+.gallery-section .grid-item:focus .single-img .content {
+  bottom: 0;
+}
 /* .overlay-link {
   position: absolute;
   left: 0;
@@ -788,6 +825,20 @@ label {
   font-weight: 700;
   transition: all 0.3s ease 0s;
 } */
+.bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+/*** =========================== Slick Slider ============================== ***/
+
 
 .slick-slider {
   position: relative;
