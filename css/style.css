@@ -726,9 +726,9 @@ label {
 }
 
 .eligibility-img-1 {
-  background: url("../images/man.jpg");
+  background: url("../images/b2c.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   height: 350px;
   border-radius: 20px;
@@ -738,9 +738,9 @@ label {
   transition: all ease 3s;
 }
 .eligibility-img-2 {
-  background: url("../images/women.jpg");
+  background: url("../images/b2b.jpg");
   background-size: cover;
-  background-position: top;
+  background-position:bottom;
   background-repeat: no-repeat;
   height: 350px;
   border-radius: 20px;
@@ -751,24 +751,26 @@ label {
 }
 
 .eligibility-img-overlay {
-  background: rgba(0, 0, 0, 0.637);
+  -webkit-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  background: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   border-radius: 20px;
   bottom: -100%;
   left: 0;
   right: 0;
+  -moz-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
 }
-.eligibility-img-2:hover .eligibility-img-overlay {
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+.eligibility-img-2:hover .eligibility-img-overlay,
 .eligibility-img-1:hover .eligibility-img-overlay {
   bottom: 0;
   left: 0;
   right: 0;
 }
+
 
 .eligibility-img-cont {
   gap: 20px;
